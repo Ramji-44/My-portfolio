@@ -27,8 +27,8 @@ header nav .name{
 }
 header nav{
   width: 100%;
-  margin: 0 2em;
   height: 8vh;
+  padding: 0 2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,6 +60,25 @@ header .nav-links a:hover::after{   /*underline effect*/
 header .menu-btn{
   display: none;
 }
+
+.intro-section .study{
+  margin: 1.5em;
+}
+.title-subtitle .title{
+  padding-left: 0.7em;
+} 
+.intro-section .subtitle{
+  padding-left: 2em;
+  padding-top: 1em;
+}
+.resume-contact{
+  margin-top: 1em;
+  padding-left: 2em;
+}
+.intro-section .socials{
+  padding-left: 2em;
+}
+
 /* ========== Hero ========== */
 .hero{
   display: grid;
@@ -97,18 +116,14 @@ header .menu-btn{
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  color: white;
+  text-decoration: none;
   padding: 8px 14px;
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.1);
   background: rgba(21,24,35,0.6);
 }
 
-.cta{
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
 
 .btn{
   padding: 12px 18px;
@@ -317,11 +332,13 @@ a:focus-visible, button:focus-visible{
     outline: none;
   }
   header .nav-links{
+    width: 100%;
     display: none;
     color: black;
     width: 100%;
     position: absolute;
-    top: 7vh;
+    top: 8vh;
+    left: 0%;
     text-align: center;
     background-color: #EAEFEF;
     border-radius: 10px;
@@ -329,8 +346,8 @@ a:focus-visible, button:focus-visible{
     z-index: 999;
   }
   .nav-links li{
+    padding: 0.5em 0;
     font-size: 1.1em;
-    margin: 0.3em 0;
   }
   header .nav-links.open-links{
     display: block;
