@@ -119,28 +119,58 @@ header .menu-btn{
   left: 10%;
   transform: translateX(-50%, -50%);
 }
-
-
+/* About section */
+#about{
+  padding-left: 1em;
+}
+/* project numbers */
+section .stat{
+  text-align: center;
+}
+/* Technical skills */
+#skills{
+  padding-left: 1em;
+}
 /* ========== Cards, Grids, Chips ========== */
-.card{
+/* .card{
   background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius);
   padding: 20px;
   box-shadow: var(--shadow-sm);
   backdrop-filter: blur(10px);
-}
+} */
 
-.grid{
+/* technologies */
+#skills .chip{
+  background-color: #F6F0D7;
+  border: 1px solid #FAB95B;
+}
+#skills .chip:hover{
+  color: #F0F0DB;
+  cursor: pointer;
+  border: 1px solid #30364f;
+  background-color: #30364F;
+  box-shadow: 3px 3px 3px #30364F;
+}
+/* detailed projects */
+ .projects{
   display: grid;
-  gap: 18px;
+  grid-template-columns: repeat(autofit, minmax(300px,1fr));
+  grid-template-rows: 1fr;
+  border: 1px solid red;
 }
 
-.grid.projects{
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+.projects .card-project{
+  border: 1px solid blue;
 }
 
-.chips, .tags{
+
+#projects .section-title{
+  padding-left: 0.5em;
+}
+
+.chips{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
