@@ -143,46 +143,80 @@ section .stat{
 
 /* technologies */
 #skills .chip{
+  margin-top: 1em;
   background-color: #F6F0D7;
   border: 1px solid #FAB95B;
 }
-#skills .chip:hover{
-  color: #F0F0DB;
-  cursor: pointer;
-  border: 1px solid #30364f;
-  background-color: #30364F;
-  box-shadow: 3px 3px 3px #30364F;
-}
-/* detailed projects */
- .projects{
-  display: grid;
-  grid-template-columns: repeat(autofit, minmax(300px,1fr));
-  grid-template-rows: 1fr;
-  border: 1px solid red;
-}
-
-.projects .card-project{
-  border: 1px solid blue;
-}
-
-
-#projects .section-title{
-  padding-left: 0.5em;
-}
-
 .chips{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
 }
+#skills .chip:hover{
+  color: #F0F0DB;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1px solid #30364f;
+  background-color: #30364F;
+  box-shadow: 3px 3px 3px #30364F;
+}
+
+/* detailed projects */
+ .projects-section{
+  margin: 1em 2em;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.card-project{
+  padding: 1em;
+  cursor: pointer;
+  background-color: #EFEEEA;
+  border-radius: 10px;
+  border: 1px solid #F5F5F5;
+  box-shadow: 3px 3px 3px #DBE4C9;
+}
+.card-project:hover{
+  color: white;
+  background-color: #3D8D7A;
+  border: 1px solid #34656D;
+  transition: 0.3s ease;
+}
+.tags{
+  display: flex;
+  gap: 1em;
+}
+.projects-section .tags .tag{
+  color: white;
+  border-radius: 30px;
+  padding: 0.3em 1em;
+  margin: 1em 0.5em 1em 0.5em ;
+  background-color: #FF5B5B;
+  border: 1px solid #FF5B5B;
+}
+#projects .section-title{
+  margin-top: 1.5em;
+  padding-left: 1em;
+}
+.card-project p{
+  padding: 0.5em 1em;
+}
+.projects-section .actions{
+  padding: 0;
+  color :#4682A9;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.project-link:hover{
+  color: white;
+}
 
 .chip, .tag{
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: var(--text);
   font-size: 13px;
 }
 
