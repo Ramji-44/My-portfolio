@@ -120,28 +120,40 @@ header .menu-btn{
   transform: translateX(-50%, -50%);
 }
 /* About section */
-#about{
-  padding-left: 1em;
+.self-intro{
+  margin-left: 1.5em;
 }
-/* project numbers */
-section .stat{
-  text-align: center;
+/* ========== About Stats ========== */
+ .about{
+  display: grid;
+  gap: 18px;
 }
-/* Technical skills */
-#skills{
-  padding-left: 1em;
-}
-/* ========== Cards, Grids, Chips ========== */
-/* .card{
-  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: var(--radius);
-  padding: 20px;
-  box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(10px);
-} */
 
-/* technologies */
+.stats{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.stat{
+  text-align: center;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.num{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* title */
+.section-title{
+  padding-left: 0.7em;
+}
+
+/* technical skills */
 #skills .chip{
   margin-top: 1em;
   background-color: #F6F0D7;
@@ -162,26 +174,29 @@ section .stat{
   box-shadow: 3px 3px 3px #30364F;
 }
 
-/* detailed projects */
+/*  projects  section */
+#projects .section-title{
+  margin-top: 2em;
+}
  .projects-section{
   margin: 1em 2em;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1em;
-  grid-template-columns: repeat(3,1fr);
 }
 
 .card-project{
   padding: 1em;
   cursor: pointer;
-  background-color: #EFEEEA;
+  background-color: #87B6BC;
   border-radius: 10px;
-  border: 1px solid #F5F5F5;
+  border: 1px solid #87B6BC;
   box-shadow: 3px 3px 3px #DBE4C9;
 }
-.card-project:hover{
+.card-project:hover,
+.project-link:hover{
   color: white;
   background-color: #3D8D7A;
-  border: 1px solid #34656D;
   transition: 0.3s ease;
 }
 .tags{
@@ -196,23 +211,16 @@ section .stat{
   background-color: #FF5B5B;
   border: 1px solid #FF5B5B;
 }
-#projects .section-title{
-  margin-top: 1.5em;
-  padding-left: 1em;
-}
+
 .card-project p{
   padding: 0.5em 1em;
 }
 .projects-section .actions{
   padding: 0;
-  color :#4682A9;
+  color :#4682A9; 
   text-align: center;
   border-radius: 30px;
-}
-
-.project-link:hover{
-  color: white;
-}
+} 
 
 .chip, .tag{
   padding: 8px 12px;
@@ -220,32 +228,24 @@ section .stat{
   font-size: 13px;
 }
 
-.project h3{ margin: 4px 0 6px; }
-.project p{ color: var(--muted); min-height: 48px; }
 
-/* ========== About Stats ========== */
-.about{
+/* experiance section */
+
+#experience .intern-experience{
+  margin: 0 0 0 1.5em;
   display: grid;
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+#experience .intership{
+  padding: 1em;
+  border: 1px solid blue;
 }
 
-.stats{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
 
-.stat{
-  padding: 16px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.num{
-  font-size: 28px;
-  font-weight: 700;
-}
 
 /* ========== Timeline (Experience) ========== */
 .timeline{
@@ -261,10 +261,10 @@ section .stat{
 }
 
 .timeline h4{ margin: 0 0 6px; }
-.timeline small{ color: var(--muted); }
+.timeline small{ color: var(--muted); } */
 
 /* ========== Contact Card ========== */
-.contact-card{
+/* .contact-card{
   display: grid;
   gap: 12px;
   justify-items: center;
@@ -278,7 +278,7 @@ section .stat{
   border-radius: 14px;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.04);
-}
+} */
 
 /* ========== Footer ========== */
 footer{
