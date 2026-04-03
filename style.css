@@ -250,7 +250,10 @@ header .menu-btn{
   word-spacing: 3px;
   border-radius: 20px;
   background-color: #F5F2F2;
-  border: 1px solid blue;
+  border: 1px solid #B0E4CC;
+}
+.intern-company{
+  color: #021A54;
 }
 
 
