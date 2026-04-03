@@ -154,16 +154,21 @@ header .menu-btn{
 }
 
 /* technical skills */
-#skills .chip{
-  margin-top: 1em;
-  background-color: #F6F0D7;
-  border: 1px solid #FAB95B;
-}
+
 .chips{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+}
+#skills .chip{
+  font-size: 1.3em;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  background-color: #F6F0D7;
+  border: 1px solid #FAB95B;
 }
 #skills .chip:hover{
   color: #F0F0DB;
@@ -232,36 +237,22 @@ header .menu-btn{
 /* experiance section */
 
 #experience .intern-experience{
-  margin: 0 0 0 1.5em;
+  margin: 0 1.5em 0 1.5em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   gap: 1em;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
-#experience .intership{
-  padding: 1em;
+#experience .internship{
+  margin: 1em 0 ;
+  padding: 1.5em 1em;
+  word-spacing: 3px;
+  border-radius: 20px;
+  background-color: #F5F2F2;
   border: 1px solid blue;
 }
 
-
-
-/* ========== Timeline (Experience) ========== */
-.timeline{
-  display: grid;
-  gap: 18px;
-}
-
-.timeline .t{
-  padding: 16px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.timeline h4{ margin: 0 0 6px; }
-.timeline small{ color: var(--muted); } */
 
 /* ========== Contact Card ========== */
 /* .contact-card{
